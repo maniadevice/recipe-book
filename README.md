@@ -4,12 +4,15 @@ Recipe Book is a simple project that lets the user maintain their recipes. It's 
 
 ### Getting started
 ```sh
-git clone git@bitbucket.org:mania_dev/recipe-book.git
+git clone https://mania_dev@bitbucket.org/mania_dev/recipe-book.git
 cd recipe-book/
+yarn install
 yarn run build
 yarn run dev-server
 ```
-Once the server does it's job, open your browser and hit: http://localhost:8080
+Once the server says 'Compiled successfully', open your browser and hit: http://localhost:8080
+
+The project is live at http://45.32.163.117:8080
 
 ### Main tech
 - React
