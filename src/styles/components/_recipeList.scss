@@ -1,0 +1,13 @@
+.recipe_list__item {
+    padding: $s-size;
+    border-bottom: 1px lightgray dotted;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe_list__item__link {
+    background-color: transparent;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 7px;
+}
