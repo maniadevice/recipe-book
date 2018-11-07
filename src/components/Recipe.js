@@ -1,6 +1,9 @@
 import React from 'react';
 
 const Recipe = (props) => (
+
+    // the recipe to render is passed here as Link params
+    // from the RecipeList
     <div className='container'>
         <div className="page_bar">
             <h3 className='page_bar__title'>{props.location.state.recipe.title}</h3>

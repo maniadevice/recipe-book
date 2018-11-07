@@ -9,7 +9,8 @@ const RecipeList = (props) => (
             {
                 props.recipes.map((recipe) => {
 
-                    console.log(props);
+                    // filter for search string (title/ingredientName), 
+                    // passed down as props by RecipeDashboard
                     if (recipe.title.toLowerCase()
                         .search(props.searchFilter.titleSearchString.toLowerCase()) === -1) {
                         return null;

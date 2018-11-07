@@ -15,6 +15,7 @@ class RecipeDashboard extends React.Component {
         this.setFilter = this.setFilter.bind(this);
     }
 
+    // Sets two search strings as component state
     setFilter(event) {
 
         const titleSearchString = '';
@@ -22,7 +23,7 @@ class RecipeDashboard extends React.Component {
 
         const searchFilter = event.target.id;
         const searchValue = event.target.value;
-        console.log(searchValue);
+
         if(searchFilter === 'title_search') {
             this.setState((prevState) => {
                 return {
@@ -39,7 +40,6 @@ class RecipeDashboard extends React.Component {
                 }
             })
         }
-        console.log(this.state);
     }
 
     render() {

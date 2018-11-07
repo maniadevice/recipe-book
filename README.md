@@ -29,4 +29,6 @@ The recipes are persisted in the browser. Recipes can be removed by clicking on 
 ### Possible improvements
 * Form validation for adding new recipe
     - Image size limit
+    - Image file format
     - Mandatory fields
+* Editing a recipe

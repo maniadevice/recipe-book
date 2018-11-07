@@ -15,11 +15,13 @@ class AddRecipe extends React.Component {
         console.log(props);
     }
 
+    // Sets ingredient count to component state
     setIngredientCount(event) {
         const ingredientCount = event.target.value;
         this.setState((prevState) => ({ ingredientCount }));
     }
 
+    // Draws 'n' ingredient fields based on state.ingredientCount
     drawIngredientsInput() {
 
         const ingredientsInputList = [];
@@ -68,6 +70,8 @@ class AddRecipe extends React.Component {
     }
 }
 
+// Passes function ref as props to the component
+// that can be triggered on form submit
 const mapDispatchToProps = (dispatch) => {
     return {
         onAddRecipe: event => {
@@ -93,7 +97,6 @@ const mapDispatchToProps = (dispatch) => {
 
             // finally read the image
             const reader = new FileReader();
-            let image;
             reader.onload = function (e) {
                 recipeObject.image = reader.result.toString();
                 console.log(recipeObject);

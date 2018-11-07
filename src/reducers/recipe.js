@@ -1,4 +1,3 @@
-import React from 'react';
 import uuid from 'uuid';
 
 let recipeReducerDefaultState = [
@@ -144,6 +143,8 @@ let recipeReducerDefaultState = [
 const json = localStorage.getItem('recipes');
 const recipes = JSON.parse(json);
 
+// if there are recipes saved in
+// localStorage we use them as default
 if(recipes != null) {
     recipeReducerDefaultState = recipes;
 }
